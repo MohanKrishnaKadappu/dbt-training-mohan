@@ -6,4 +6,5 @@
 
 select 
 *
-from raw.global_mart.customer
+from 
+{{ source('globalmart', 'customer') }}
